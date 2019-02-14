@@ -1,4 +1,8 @@
 # liaomei
-from simple to liaomei by tkinter
+从入门到撩妹
 
-editing
+python3，主要使用tkinter库，无第三方库
+
+代码见2019文件夹
+
+001-005分别对应1.1-1.5五个版本
