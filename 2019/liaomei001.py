@@ -7,7 +7,7 @@ import tkinter.font as tkFont # 引入字体模块
 
 # ===常量设置===
 # 素材——图片
-IMGPATH="img/001.gif"
+IMGPATH = "../img/001.gif"
 # 文字
 TITLE="大妹子"
 QUES="我喜欢你，有机会吗？"
@@ -72,7 +72,7 @@ def clickyes():
     top_loc="{}x{}+{}+{}".format(TOPWIDTH,TOPHEIGHT,top_x,top_y)
     top.geometry(top_loc)
     # 添加内容
-    tk.Label(top,text = YESREPLY).pack()
+    tk.Label(top, text = YESREPLY).pack()
     win.update()
     time.sleep(1)
     # 关闭程序
@@ -85,7 +85,7 @@ b1=tk.Button(frame,text=NO,font=ansft)
 b1.place(x=bx,y=by,width=BUTTONWIDTH,height=BUTTONHEIGHT)
 
 def clickno(event):
-    global bx,by
+    global bx, by
     bx, by = random.randint(SPACE, WINWIDTH-SPACE), random.randint(SPACE, WINHEIGHT-SPACE)
     b1.place(x=bx,y=by)
     # print(event.x_root,event.y_root)
